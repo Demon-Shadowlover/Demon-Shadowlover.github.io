@@ -179,6 +179,81 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-12.5" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/12/05/12.5/" class="article-date">
+  	<time datetime="2020-12-05T09:40:32.000Z" itemprop="datePublished">2020-12-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/05/12.5/">
+        PHP伪协议WP
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="PHP伪协议1"><a href="#PHP伪协议1" class="headerlink" title="PHP伪协议1"></a>PHP伪协议1</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/8e31a74efd72de65cb242a847fd335cf.png" alt="Markdown"></p>
+<p> 首先用下列代码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?file=php://filter/read=convert.base64-encode/resource=flag</span><br></pre></td></tr></table></figure>
+<p>解题，得到下面情况。<br><img src="https://img-blog.csdnimg.cn/img_convert/8a3aa6dfd19b74372f87dd2dc2c0d4f3.png" alt="Markdown">这是因为有PHP :<a target="_blank" rel="noopener" href="https://www.runoob.com/php/php-preg_match.html">preg_match()函数</a>.<br>如果匹配到preg_match函数里的字符串，则返回ture,否则返回false。<br>显然上述字符串里面含有php 和base两个字符，就返回了false从而输出了<code>hacker！！！</code>，<br>那么如何绕过呢？<br>由于这里是区分大小写的，所以可以将php和base，更改成PHP,BAse(其中的一部分字母改为大写），即</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?file=PHP://filter/read=convert.bAse64-encode/resource=flag</span><br></pre></td></tr></table></figure>
+<p>就可以得到<br><img src="https://img-blog.csdnimg.cn/img_convert/1990a0176451b8d8a2cbd1551a1950d3.png" alt="Markdown">这是一个base64编码的内容（convert.base64-encode是转换过滤器，等同于base64_encode()，base64编码），将其解码，就可以得到flag。</p>
+<h1 id="PHP伪协议2"><a href="#PHP伪协议2" class="headerlink" title="PHP伪协议2"></a>PHP伪协议2</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/70514867e569a17241ad52704bb577d8.png" alt="Markdown"><br>首先用下列代码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?file=php://filter/read=convert.base64-encode/resource=flag</span><br></pre></td></tr></table></figure>
+<p>解题，得到下面情况。<br><img src="https://img-blog.csdnimg.cn/img_convert/441cc786e9365237fb54f6a89d74e681.png" alt="Markdown">这是因为preg_match()函数后面有个i，表示匹配的字符串不区分大小写，<br>有根据提示得到一个<code>str_replace()</code>函数，这个函数是替换字符串用的。<br><a target="_blank" rel="noopener" href="https://www.runoob.com/php/func-string-str-replace.html">str_replace()函数</a>替换字符串中的一些字符（区分大小写）。函数<code>（）</code>中的第一个<code>“”</code>中的内容将会被第二个<code>“”</code>中 的内容替换。<br>从而可以有以下代码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?file=ptroyehp://filter/read=convert.bastroyee64-encode/resource=flag</span><br></pre></td></tr></table></figure>
+<p>得到<br><img src="https://img-blog.csdnimg.cn/img_convert/36400052f0e327231c96daaca29ae6e7.png" alt="Markdown">将base64解码就可以得到flag了。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        
+<div class="counter-tag counter">
+    <span id="/2020/12/05/12.5/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="PHP伪协议WP">
+         &nbsp;
+        view
+    </span>
+</div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-12.3" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
