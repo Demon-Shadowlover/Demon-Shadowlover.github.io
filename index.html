@@ -179,83 +179,6 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-12-4" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2020/12/06/12-4/" class="article-date">
-  	<time datetime="2020-12-06T01:53:26.000Z" itemprop="datePublished">2020-12-06</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/06/12-4/">
-        bugku 字符？正则？
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="bugku-字符？正则？"><a href="#bugku-字符？正则？" class="headerlink" title="bugku 字符？正则？"></a>bugku 字符？正则？</h2><p><img src="https://img-blog.csdnimg.cn/img_convert/90bcfa52d93309631406bf3e7797af29.png" alt="Markdown">这是一道正则匹配题，preg_match()表达式</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">preg_match(&quot;/key.*key.&#123;4,7&#125;key:\/.\/(.*key)[a-z][[:punct:]]/i&quot;, trim($_GET[&quot;id&quot;]), $match);</span><br></pre></td></tr></table></figure>
-<p>中的</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;/key.*key.&#123;4,7&#125;key:\/.\/(.*key)[a-z][[:punct:]]/i&quot;</span><br></pre></td></tr></table></figure>
-<p>即要构造的参数需要符合的条件。参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/afarmer/archive/2011/08/29/2158860.html">正则表达式中各种字符的含义</a>.<br>可以构造一下字符</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keykeyaaaakey:/a/keya:</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keyakeyaaaakey:/a/aakeyb! </span><br></pre></td></tr></table></figure>
-
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keyakeyaaaakey:/a/keya! </span><br></pre></td></tr></table></figure>
-
-<p>等。</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/8c93f462b98133caf7f055ddd101dcf4.png" alt="Markdown">从而得到flag。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        
-<div class="counter-tag counter">
-    <span id="/2020/12/06/12-4/" class="leancloud_visitors post-title-link"
-          style="font-size: 12px" data-flag-title="bugku 字符？正则？">
-         &nbsp;
-        view
-    </span>
-</div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
     <article id="post-12-5" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -310,6 +233,83 @@
 <div class="counter-tag counter">
     <span id="/2020/12/05/12-5/" class="leancloud_visitors post-title-link"
           style="font-size: 12px" data-flag-title="PHP伪协议WP">
+         &nbsp;
+        view
+    </span>
+</div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-12-4" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/12/04/12-4/" class="article-date">
+  	<time datetime="2020-12-04T01:53:26.000Z" itemprop="datePublished">2020-12-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/04/12-4/">
+        bugku 字符？正则？
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="bugku-字符？正则？"><a href="#bugku-字符？正则？" class="headerlink" title="bugku 字符？正则？"></a>bugku 字符？正则？</h2><p><img src="https://img-blog.csdnimg.cn/img_convert/90bcfa52d93309631406bf3e7797af29.png" alt="Markdown">这是一道正则匹配题，preg_match()表达式</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">preg_match(&quot;/key.*key.&#123;4,7&#125;key:\/.\/(.*key)[a-z][[:punct:]]/i&quot;, trim($_GET[&quot;id&quot;]), $match);</span><br></pre></td></tr></table></figure>
+<p>中的</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;/key.*key.&#123;4,7&#125;key:\/.\/(.*key)[a-z][[:punct:]]/i&quot;</span><br></pre></td></tr></table></figure>
+<p>即要构造的参数需要符合的条件。参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/afarmer/archive/2011/08/29/2158860.html">正则表达式中各种字符的含义</a>.<br>可以构造一下字符</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keykeyaaaakey:/a/keya:</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keyakeyaaaakey:/a/aakeyb! </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keyakeyaaaakey:/a/keya! </span><br></pre></td></tr></table></figure>
+
+<p>等。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/8c93f462b98133caf7f055ddd101dcf4.png" alt="Markdown">从而得到flag。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        
+<div class="counter-tag counter">
+    <span id="/2020/12/04/12-4/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="bugku 字符？正则？">
          &nbsp;
         view
     </span>
