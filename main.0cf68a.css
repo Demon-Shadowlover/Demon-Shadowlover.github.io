@@ -208,12 +208,12 @@ https://ianlunn.github.io/Hover/ */
     /* background:#fff; */
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url('https://s3.ax1x.com/2020/12/14/ru0bEq.jpg') no-repeat 0% 20%/ cover;
-    width:300px;
+    width:200px;
     position:fixed;
     opacity:1;
     transition:all .3s ease-in;
     -ms-transition: all .3s ease-in;
-    height:100%;
+    height:90%;
     z-index:999
 }
 
