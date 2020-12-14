@@ -200,3 +200,20 @@ https://ianlunn.github.io/Hover/ */
     padding: .5em 1em;
 }
 /*版权声明的样式》*/
+
+
+
+
+.left-col {
+    /* background:#fff; */
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('https://imgchr.com/i/ruwpz4') no-repeat 0% 20%/ cover;
+    width:300px;
+    position:fixed;
+    opacity:1;
+    transition:all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    height:100%;
+    z-index:999
+}
+
