@@ -216,17 +216,3 @@ https://ianlunn.github.io/Hover/ */
     height:100%;
     z-index:999
 }
-
- .left-col #header a {
--    color:#696969
-+    color:#673ab7^M
- }
- .left-col #header a:hover {
--    color:#b0a0aa
-+    color: #03A9F4^M
- }
- .left-col #header .header-subtitle {
-     text-align:center;
--    color:#999;
-+    color:#673ab7;
-     font-size:18px;
