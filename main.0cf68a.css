@@ -256,11 +256,11 @@ body {
     /* background-color:#fff; */
     min-height:100%;
     background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
-    url('https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/00/ChMkJlbKw6KIXhXnAA4L-_oxRzUAALG6QBUSg8ADgwT181.jpg') no-repeat 0% 0%/ cover;
+    url('/source/img/beijing.jpg') no-repeat 0% 0%/ cover;
 }
 
 /* 手机端换用一张背景图片，可以不使用 */
 @media screen and (max-width:800px) {
     body {
-		background: url('https://oss.yansheng.xyz/your-name-phone2ys.jpg') no-repeat fixed top;
+		background: url('source/img/beijing.jpg') no-repeat fixed top;
     }
