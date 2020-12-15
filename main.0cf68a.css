@@ -256,11 +256,11 @@ body {
     /* background-color:#fff; */
     min-height:100%;
     background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
-    url('/source/img/beijing.jpg') no-repeat 0% 0%/ cover;
+    url('https://s3.ax1x.com/2020/12/14/ruwSWF.jpg') no-repeat 0% 0%/ cover;
 }
 
 /* 手机端换用一张背景图片，可以不使用 */
 @media screen and (max-width:800px) {
     body {
-		background: url('source/img/beijing.jpg') no-repeat fixed top;
+		background: url('https://s3.ax1x.com/2020/12/14/ruwSWF.jpg') no-repeat fixed top;
     }
